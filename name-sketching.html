@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sketching my name</title>
+  <!--<link rel="stylesheet" href="styles/name.css">-->
+  <style>
+    .writing-name {
+  background-color: white;
+  height: 110px;
+  margin-top: 300px;
+  display: flex;
+}
+
+.sketch-o-outer {
+  height:100px;
+  width: 100px;
+  background-color: purple;
+  border-radius: 50px;
+  position: absolute;
+}
+
+.sketch-o-inner {
+  height: 90px;
+  width: 90px;
+  background-color: white;
+  border-radius: 45px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.making-shape {
+  margin-left: 50px;
+}
+
+.sketch-vertical-full,
+.sketch-left-slope-full,
+.sketch-right-slope-full,
+.sketch-left-slope-half,
+.sketch-horizontal-half {
+  height: 100px;
+  width: 10px;
+  background-color: purple;
+  display: inline-block;
+  position: absolute;
+}
+
+.sketch-vertical-full-two {
+  height: 100px;
+  width: 10px;
+  background-color: purple;
+  display: inline-block;
+  position: absolute;
+  left: 200px;
+}
+
+.sketch-left-slope-full {
+  transform: skew(45deg);
+  left: 50px;
+}
+
+.sketch-right-slope-full {
+  transform: skew(-45deg);
+  left: 150px;
+}
+
+.sketch-left-slope-half {
+  height: 50px;
+  transform: skew(45deg);
+}
+.sketch-horizontal-half {
+  height: 10px;
+  width: 110px;
+  position: absolute;
+  top: 50px;
+  left: 60px;
+}
+
+.sketch-o,
+.sketch-m,
+.sketch-a,
+.sketch-r {
+  position: relative;
+  flex: 1;
+}
+
+.sketch-o {
+  position: relative;
+}
+
+.sketch-o,
+.sketch-a {
+  background-color: white;
+  width: 110px;
+}
+
+.sketch-m,
+.sketch-r {
+  background-color: white;
+}
+
+.sketch-a .sketch-right-slope-full {
+  transform: skew(-45deg);
+  left: 60px;
+}
+
+.sketch-a .sketch-left-slope-full {
+  transform: skew(45deg);
+  left: 160px;
+}
+
+.sketch-r .sketch-o-outer {
+  height: 50px;
+  width: 50px;
+  left: -12px;
+}
+
+.sketch-r .sketch-o-inner {
+  height: 40px;
+  width: 40px;
+  left: -7px;
+}
+
+.sketch-vertical-full {
+  z-index: 100;
+}
+.sketch-a {
+  z-index: 100;
+}
+
+.sketch-r .sketch-left-slope-half {
+  left: 28px;
+  top: 46px;
+}
+  </style>
+</head>
+<body>
+  <main>
+    <section>
+      <h1>OMAR</h1>
+    </section>
+    <section class="making-shape">
+      <div class="sketch-o-outer">
+      </div>
+      <div class="sketch-o-inner">
+      </div>
+      <div class="sketch-vertical-full">
+      </div>
+      <div class="sketch-left-slope-full">
+      </div>
+      <div class="sketch-right-slope-full">
+      </div>
+      <div class="sketch-left-slope-half">
+      </div>
+      <div class="sketch-horizontal-half">
+      </div>
+    </section>
+    <section class="writing-name">
+      <div class="sketch-o">
+        <div class="sketch-o-outer"></div>
+        <div class="sketch-o-inner"></div>
+      </div>
+      <div class="sketch-m">
+        <div class="sketch-vertical-full"></div>
+        <div class="sketch-left-slope-full"></div>
+        <div class="sketch-right-slope-full"></div>
+        <div class="sketch-vertical-full-two"></div>
+      </div>
+      <div class="sketch-a">
+        <div class="sketch-right-slope-full"></div>
+        <div class="sketch-left-slope-full"></div>
+        <div class="sketch-horizontal-half"></div>
+      </div>
+      <div class="sketch-r">
+        <div class="sketch-vertical-full"></div>
+        <div class="sketch-o-outer"></div>
+        <div class="sketch-o-inner"></div>
+        <div class="sketch-left-slope-half"></div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

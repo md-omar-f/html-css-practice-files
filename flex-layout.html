@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link rel="stylesheet" href="styles/flex-layout.css">
+    <title>
+      flex layout practice
+    </title>
+    <!--<style>
+      * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-bar {
+  width: 100%;
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+
+.side-bar-and-content {
+  width: 100%;
+  flex: 1;
+  display: flex;
+}
+
+.side-bar {
+  width: 10%;
+
+  background-color: lightpink;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-section {
+  flex: 1;
+  padding: 2%;
+}
+
+.video-preview-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.video-preview {
+  flex-basis: calc(33.33% - 5px);
+  margin-right: 5px;
+  margin-bottom: 5px;
+  height: 10vh;
+  background-color: brown;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-preview-row .video-preview:nth-child(3),
+.video-preview-row .video-preview:nth-child(6) {
+  margin-right: 0px;
+}
+    </style>-->
+  </head>
+  <body>
+    <main class="container">
+      <section class="nav-bar">
+        nav-bar
+      </section>
+      <section class="side-bar-and-content">
+        <section class="side-bar">
+          side-bar
+        </section>
+        <section class="content-section">
+          <div class="video-preview-row">
+            <div class="video-preview">
+              video-preview 1
+            </div>
+            <div class="video-preview">
+              video-preview 2
+            </div>
+            <div class="video-preview">
+              video-preview 3
+            </div>
+            <div class="video-preview">
+              video-preview 3
+            </div>
+            <div class="video-preview">
+              video-preview 3
+            </div>
+            <div class="video-preview">
+              video-preview 3
+            </div>
+            <div class="video-preview">
+              video-preview 3
+            </div>
+          </div>
+        </section>
+      </section>
+
+    </main>
+  </body>
+</html>
